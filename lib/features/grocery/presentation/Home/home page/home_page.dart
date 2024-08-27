@@ -147,7 +147,7 @@ class GroceryItemCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 70,
+              height: 55,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 image: DecorationImage(
@@ -170,7 +170,7 @@ class GroceryItemCard extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 4),
             Text(
               grocery.title,
               style: const TextStyle(
@@ -181,7 +181,7 @@ class GroceryItemCard extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             Row(
               children: [
                 const Icon(
@@ -196,7 +196,7 @@ class GroceryItemCard extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             Text(
               '€${grocery.price.toStringAsFixed(2)}',
               style: const TextStyle(
